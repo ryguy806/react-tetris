@@ -8,5 +8,5 @@ export const createStage = () =>
 
 /* 
     0 = nothing, each tetromino will have a letter in that particular cell
-    clear = merge when a tetromino colides on the stage.
+    clear => merge when a tetrominos colides on the stage.
 */
