@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Sound from 'react-sound';
+import soundfile from '../sounds/Tetris.mp3';
 
 import { createStage, checkCollision } from '../gameHelpers';
 
@@ -105,6 +107,7 @@ const Tetris = () => {
       onKeyDown={e => move(e)}
       onKeyUp={keyUp}
     >
+      <Sound url={soundfile} playStatus="PLAYING" loop={true}/>
       <StyledTetris>
         <Stage stage={stage} />
         <aside>
